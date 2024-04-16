@@ -6,22 +6,14 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 16:26:35 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/16 17:39:53 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/16 18:19:55 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int ft_isalpha (int c)
 {
     if ((64 < c && c < 91 )|| (96 < c && c < 123))
-        return (1);
+        return 1;
     else
         return 0;
-}
-
-int main()
-{
-    unsigned char x;
-    x = 'A';
-    ft_isalpha(x);
-    return 0;
 }
