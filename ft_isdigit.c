@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/16 19:02:12 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/16 19:02:31 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/16 19:03:51 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@ int ft_isdigit (int c)
 {
     if ('0' <= c && c <= '9')
         return 1;
-    return 0;  
+    return 0;
 }
