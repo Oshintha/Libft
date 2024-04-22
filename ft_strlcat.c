@@ -6,54 +6,54 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 09:34:21 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/22 09:34:21 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/22 19:21:18 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_strlen(const char *s)
-{
-	size_t	i;
-
-	i = 0;
-	while (s[i])
-	{
-		i++;
-	}
-	return (i);
-}
-
-size_t  ft_strlcat(char * restrict dst, const char * restrict src, size_t dessize)
+static size_t   ft_strlen(char const *str)
 {
     size_t i;
 
-    if (dessize == 0)
-        return ft_strlen(src);
-    i=0;
-    while ((src[i]) && i < dessize - 1)
+    i = 0;
+    while(*(str + 1))
+        i++;
+    return (i);
+}
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+{
+    size_t dst_len = 0;
+    while (dst[dst_len] && dst_len < dstsize)
+        dst_len++;
+    
+    size_t total_len = dst_len + ft_strlen(src);
+    if (dst_len >= dstsize)
+        return total_len;
+    
+    size_t i = 0;
+    while (src[i] && dst_len + 1 < dstsize)
     {
-        dst[i] = src[i];
+        dst[dst_len] = src[i];
+        dst_len++;
         i++;
     }
-    dst[i] = '\0';
-    return ft_strlen(src);
+    dst[dst_len] = '\0';
+    return total_len;
 }
-
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
     const char *str = "Hello Hive!";
-    char dst1[6]; // Buffer must hold 4 characters + null terminator
-    char dst2[6]; // Same size buffer for the custom function
+    char dst1[20] = "The Foragers"; 
+    char dst2[20] = "The Foragers"; 
 
-    strlcpy(dst1, str, 5); // Copies "Hell" + '\0'
-    printf("Original: %s\n", dst1); // Properly outputs with a newline for clarity
-
-    ft_strlcpy(dst2, str, 5); // Custom function does the same
-    printf("My version: %s\n", dst2); // Also outputs with a newline for clarity
+    strlcat(dst1, str, 10); 
+    printf("Original: %s\n", dst1);
+    ft_strlcat(dst2, str, 10); 
+    printf("My version: %s\n", dst2); 
 
     return 0;
 }
