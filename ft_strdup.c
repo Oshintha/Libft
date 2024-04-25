@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 20:49:26 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/24 20:49:26 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 15:22:39 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ char	*ft_strdup(char *src)
 		return (NULL);
 	return (ft_strcpy(src, new));
 }
-
+/* 
 #include <stdio.h>
 #include <string.h>
 
@@ -57,4 +57,4 @@ int main(int ac, char **av)
 		return (0);
 	}
 	return (1);
-}
+} */
