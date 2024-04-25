@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 11:35:20 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/17 18:42:48 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 14:14:29 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	*ft_memset(void *b, int c, size_t len)
 		str[i] = (unsigned char)c;
 		i++;
 	}
-	return (b);
+	return (str);
 }
 
  #include <string.h>
@@ -34,11 +34,11 @@ int main()
 {
 char str[] = "Hello Hive!";
 
-memset(str, 'A',5);
+memset(str, 'A',11);
 
 printf("%s\n", str);
 
-ft_memset(str, 'D',5);
+ft_memset(str, 'A',11);
 
 printf("%s\n", str);
 
