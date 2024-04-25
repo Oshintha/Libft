@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 18:42:56 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 11:46:12 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 11:52:34 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,9 @@ int	ft_atoi(const char *str)
 
 int main()
 {
-  char str1[] = "--1234ab567";
+  char str1[] = "   +12345484ab567";
   printf("Orginal %s:\n", str1);
   printf("my put %d:\n", ft_atoi(str1));
   printf("original %d:\n", atoi(str1));
-}
+  return (0);
+} */
