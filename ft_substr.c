@@ -6,36 +6,41 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 08:18:11 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 08:18:11 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 16:07:08 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*str;
 	size_t	i;
 
+	if (!s)
+		return (NULL);
+	if (start > ft_strlen(s))
+		return (0);
 	i = 0;
-	str = (char *)malloc((sizeof(char)) * (len));
+	str = (char *)malloc((sizeof(char)) * (len + 1));
 	if (!(str))
 		return (NULL);
-	while (i < len)
+	while (i < len && s[i])
 	{
 		str[i] = s[start + i];
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
-
+/* 
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
 	char *s = "Hello_Hive!";
-	printf("my: %s\n", ft_substr(s,3,5));
+	printf("my: %s:\n", ft_substr(s, 6, 5));
 	//printf("Original: %s\n", substr(s,3,5));
 	return (0);
-}
+} */
