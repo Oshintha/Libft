@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 18:42:56 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 11:52:34 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:49:46 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,18 @@ int	ft_atoi(const char *str)
 	{
 		check = result;
 		result = result * 10 + *str - '0';
-		if (result / 10 > check && sign < 0)
+		if (result / 10 != check && sign < 0)
 			return (0);
-		if (result / 10 < check && sign > 0)
+		if (result / 10 != check && sign > 0)
 			return (-1);
 		str++;
 	}
 	return (result * sign);
 }
-/* #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
-
+#include <string.h>
+/*
 int main()
 {
   char str1[] = "   +12345484ab567";
@@ -49,3 +50,21 @@ int main()
   printf("original %d:\n", atoi(str1));
   return (0);
 } */
+int main(void)
+{
+    char *s = "-21474836481111111111111111111111111111111111";
+    char *str;
+
+    int i = 2;
+    while (i < 40)
+    {
+        str = malloc(i + 1);
+        memcpy(str, s, i);
+        str[i] = 0;
+        printf("%s\n", str);
+        printf("%i\n", atoi(str));
+        printf("%i\n\n", ft_atoi(str));
+        free(str);
+        i++;
+    }
+}
