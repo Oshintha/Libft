@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 09:12:07 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 17:17:39 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/25 17:28:12 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	int		len;
+	size_t	len;
 	char	*str;
 	char	*new;
 
