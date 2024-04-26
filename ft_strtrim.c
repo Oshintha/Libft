@@ -6,13 +6,13 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 20:22:15 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 20:22:15 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/26 10:37:45 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
@@ -35,14 +35,14 @@ char *ft_strtrim(char const *s1, char const *set)
 	str[end - start + 2] = '\0';
 	return (str);
 }
-
+/* 
 #include <stdio.h>
 #include <string.h>
 
 int main()
 {
-	char const *s1 = "hello hive";
+	char const *s1 = "hello_hive_hello_ah";
 	char const *set = "hello";
 	printf(":%s:", ft_strtrim(s1, set));
 	return (0);
-}
+} */
