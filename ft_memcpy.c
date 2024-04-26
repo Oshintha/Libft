@@ -6,27 +6,27 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 21:38:59 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/22 16:44:03 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/26 19:02:13 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char	*dest1;
 	char	*src1;
 	size_t	i;
 
 	i = 0;
-	dest1 = (char *)dest;
+	dest1 = (char *)dst;
 	src1 = (char *)src;
 	while (i < n)
 	{
 		dest1[i] = src1[i];
 		i++;
 	}
-	return (dest);
+	return (dst);
 }
 
 /* #include<stdio.h>

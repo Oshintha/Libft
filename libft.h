@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:16:35 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 16:27:07 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/26 19:02:30 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t count, size_t n);
 void	*ft_memchr(void const *str, int c, size_t n);
 int	ft_memcmp(void const *s1, void const *s2, size_t n);
-void	*ft_memcpy(void	*dest, void const *src, size_t n);
+void	*ft_memcpy(void	*dst, void const *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *str, int c, size_t n);
 

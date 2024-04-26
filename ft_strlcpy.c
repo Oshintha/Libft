@@ -6,22 +6,22 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 08:52:54 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/22 18:23:22 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/26 19:15:01 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t detsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
 	i = 0;
 	while (*(src + i))
 		i++;
-	if (!detsize)
+	if (!dstsize)
 		return (i);
-	while (--detsize && *src)
+	while (--dstsize && *src)
 		*dst++ = *src++;
 	*dst = '\0';
 	return (i);
