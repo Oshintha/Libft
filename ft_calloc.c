@@ -6,11 +6,11 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:29:34 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 14:32:36 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/26 17:45:54 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static void	*ft_memset(void *b, int c, size_t len)
 {
@@ -32,7 +32,9 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	total_size;
 	void	*value;
 
-	total_size = count * size;
+	if (count && size && count > (UINT_MAX / size))
+		return (NULL);
+    total_size = count * size;
 	value = malloc(total_size);
 	if (!value)
 		return (NULL);
