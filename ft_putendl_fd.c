@@ -27,6 +27,5 @@ int main()
 {
     char *s = "Hello Hive!";
     ft_putendl_fd(s, 1);
-    printf("\n");
     return (0);
 }
