@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:57:59 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/29 14:57:59 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 13:00:49 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
-
+/* 
 #include <stdio.h>
 
 int main()
@@ -54,4 +54,4 @@ int main()
     }
 
     return 0;
-}
+} */

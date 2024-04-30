@@ -6,12 +6,11 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:11:03 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/29 15:11:03 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 13:02:19 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
