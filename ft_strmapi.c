@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 20:21:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/26 20:21:23 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:36:14 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ char to_upper(unsigned int i, char c) {
     }
     return c;
 }
-
+/* 
 #include <stdio.h>
 
 int main() {
@@ -55,4 +55,4 @@ int main() {
     free(result);
     
     return 0;
-}
+} */

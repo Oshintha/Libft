@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:51:30 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/29 14:51:30 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:13:09 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-
+/* 
 #include <stdio.h>
 
 int main()
@@ -57,3 +57,4 @@ int main()
 
     return 0;
 }
+ */

@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 10:38:40 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/26 15:32:39 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:21:23 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ char	**ft_split(char const *s, char c)
 	array = split(s, c, words);
 	return (array);
 }
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main()
 {
@@ -110,4 +110,4 @@ int main()
 		free(result);
 	}
 	return (0);
-}
+} */

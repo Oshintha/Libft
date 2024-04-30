@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 20:58:33 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/27 20:58:33 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:19:53 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,11 @@ void ft_putnbr_fd(int n, int fd)
         write (fd, &result, 1);
     }
 }
-
-
+/* 
 #include <stdlib.h>
 
 int main()
 {
     ft_putnbr_fd(10, 1);
     return 0;
-}
+} */

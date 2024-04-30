@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:55:32 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 13:38:24 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:38:29 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-
+/* 
 #include <string.h>
 #include <stdio.h>
 
@@ -47,4 +47,4 @@ int main()
     char    needle[] = "!";
 	printf("my: %s\n", ft_strnstr(haystack, needle, -100));
 	printf("original: %s\n", strnstr(haystack, needle, -100));
-}
+} */

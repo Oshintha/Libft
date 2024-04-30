@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 17:36:59 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/27 17:36:59 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:30:59 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,16 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int	i;
-	char			*str;
+	size_t	i;
 
-	i = 0;
-	str[(ft_strlen(s)) + 1];
-	while (s[i])
-	{
-		str[i] = f(i, s[i]);
-		i++;
-	}
-	str[i] = '\0';
+    if (s && f)
+    {
+        i = 0;
+        while (*s)
+        {
+            f(i++,s++);
+        }
+    }
 }
 
 char to_upper(unsigned int i, char c) {

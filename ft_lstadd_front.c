@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:30:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/29 14:30:23 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 12:10:25 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
-
+/* 
 #include <stdio.h>
 
 int main()
@@ -49,4 +49,4 @@ int main()
     }
 
     return 0;
-}
+} */
