@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/27 20:58:33 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 13:51:15 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 18:08:40 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr_fd(int n, int fd)
 			n = -n;
 		}
 		if (n >= 10)
-			ft_putnbr_fd (n / 10, 1);
+			ft_putnbr_fd (n / 10, fd);
 		result = (n % 10) + '0';
 		write (fd, &result, 1);
 	}
@@ -36,6 +36,6 @@ void	ft_putnbr_fd(int n, int fd)
 
 int main()
 {
-	ft_putnbr_fd(10, 1);
+	ft_putnbr_fd(-987441, 2);
 	return 0;
 } */

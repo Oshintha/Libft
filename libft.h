@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 15:16:35 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 12:56:09 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 14:24:01 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int		ft_atoi(const char *str);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strchr(const char *str, int c);
-char	*ft_strdup(const char *src);
+char	*ft_strdup(const char *s1);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);

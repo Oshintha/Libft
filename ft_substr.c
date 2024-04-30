@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 08:18:11 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/25 16:07:08 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 17:09:37 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
-		return (0);
+		return (ft_strdup(""));
 	i = 0;
 	str = (char *)malloc((sizeof(char)) * (len + 1));
 	if (!(str))
@@ -33,7 +33,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-/* 
+/*
 #include <stdio.h>
 #include <string.h>
 

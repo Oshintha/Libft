@@ -6,26 +6,11 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:29:34 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 12:57:50 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 14:15:42 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static void	*ft_memset(void *b, int c, size_t len)
-{
-	unsigned char	*str;
-	size_t			i;
-
-	str = (unsigned char *)b;
-	i = 0;
-	while (i < len)
-	{
-		str[i] = (unsigned char)c;
-		i++;
-	}
-	return (str);
-}
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -41,7 +26,7 @@ void	*ft_calloc(size_t count, size_t size)
 	ft_memset(value, 0, total_size);
 	return (value);
 }
-/* 
+/*
 #include <stdio.h>
 
 // Your ft_memset and ft_calloc implementations go here...

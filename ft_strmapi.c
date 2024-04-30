@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 20:21:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 13:53:21 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 17:35:35 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,24 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int	i;
-	char			*str;
+	size_t	i;
+	char	*str;
+	char	*new;
 
-	if (!s || !f)
+	if (!s)
+		return (NULL);
+	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
+	if (!str)
 		return (NULL);
 	i = 0;
-	str = (char *)malloc(sizeof(char) * (ft_strlen(s)) + 1);
-	if (str == NULL)
-		return (NULL);
+	new = str;
 	while (s[i])
 	{
 		str[i] = f(i, s[i]);
 		i++;
 	}
 	str[i] = '\0';
-	return (0);
+	return (new);
 }
 /*
 char to_upper(unsigned int i, char c) {

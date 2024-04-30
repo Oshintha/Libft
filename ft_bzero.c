@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 17:22:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/17 19:12:33 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/04/30 15:24:55 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	ft_bzero(void *s, size_t n)
 		return ;
 	str = (unsigned char *)s;
 	i = 0;
-	while ((i < n) && str[i])
+	while (i < n)
 	{
 		str[i] = 0;
 		i++;
@@ -35,10 +35,10 @@ int main()
 {
 char str[] = "Hello Hive!";
 
-bzero(str, 5);
+bzero(str, 42);
 printf("%s\n", str+6);
 
-ft_bzero(str, 5);
+ft_bzero(str, 42);
 printf("%s\n", str+6);
 
-}   */
+} */
