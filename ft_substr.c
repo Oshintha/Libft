@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 08:18:11 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 17:09:37 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 12:13:42 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (start > ft_strlen(s))
-		return (ft_strdup(""));
+		len = 0;
+	else if (len > (ft_strlen(s) - start))
+		len = ft_strlen(s) - start;
 	i = 0;
 	str = (char *)malloc((sizeof(char)) * (len + 1));
 	if (!(str))

@@ -6,24 +6,21 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 14:02:16 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 16:14:27 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 09:25:49 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
 	i = 0;
-	if (!s)
-		return (NULL);
-	while (s[i])
-		i++;
+	i = ft_strlen (s);
 	while (i >= 0)
 	{
-		if (s[i] == c)
+		if (s[i] == (char)c)
 			return ((char *) &s[i]);
 		i--;
 	}

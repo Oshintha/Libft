@@ -6,11 +6,23 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/25 20:22:15 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/26 10:37:45 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 10:58:31 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static size_t	start_point(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (ft_strchr(set, s1[start]) && start <= end)
+		start++;
+	return (start);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -18,12 +30,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	char	*str;
 
-	if (!s1 || !set)
-		return (NULL);
-	start = 0;
+	if (!s1 || !set || !*s1)
+	{
+		str = (char *)malloc(sizeof(char));
+		if (!str)
+			return (NULL);
+		*str = '\0';
+		return (str);
+	}
+	start = start_point(s1, set);
 	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[start]) && start <= end)
-		start++;
 	if (start > end)
 		return (ft_strdup(s1 + end + 1));
 	while (ft_strchr(set, s1[end]) && end >= 0)
@@ -32,10 +48,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!str)
 		return (NULL);
 	ft_strlcpy(str, &s1[start], end - start + 2);
-	str[end - start + 2] = '\0';
+	str[end - start + 1] = '\0';
 	return (str);
 }
-/* 
+/*
 #include <stdio.h>
 #include <string.h>
 

@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:40:40 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/23 16:50:09 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 09:50:50 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	if (n == 0)
 		return (0);
 	i = 0;
-	while (s3[i] == s4[i] && s3[i] && i < n - 1)
+	while (s3[i] == s4[i] && i < n - 1)
 	{
 		i++;
 	}

@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 20:21:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 17:35:35 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 08:32:02 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,20 +34,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (new);
 }
 /*
-char to_upper(unsigned int i, char c) {
-    if (c >= 'a' && c <= 'z') {
-        return c - ('a' - 'A');
-    }
-    return c;
-}
-
 #include <stdio.h>
 
 int main() {
     const char *s = "hello";
 
     // Call ft_strmapi with the to_upper function
-    char *result = ft_strmapi(s, to_upper);
+    char *result = ft_strmapi(s, ft_toupper);
 
     // Print the result
     printf("Original string: %s\n", s);

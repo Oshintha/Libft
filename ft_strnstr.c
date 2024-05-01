@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/23 16:55:32 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 12:38:29 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 11:24:26 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	unsigned int	i;
 	unsigned int	j;
 
-	if (needle[0] == '\0')
-	{
+	if (!haystack && !len)
+		return (0);
+	if (!*needle)
 		return ((char *)(haystack));
-	}
 	i = 0;
-	while (i < len)
+	while (*haystack && (i < len))
 	{
 		j = 0;
 		while (haystack[i + j] == needle[j] && (i + j) < len)
@@ -37,14 +37,14 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (0);
 }
-/* 
+/*
 #include <string.h>
 #include <stdio.h>
 
 int main()
 {
-    char    haystack[] = "Hello Hive!";
-    char    needle[] = "!";
-	printf("my: %s\n", ft_strnstr(haystack, needle, -100));
-	printf("original: %s\n", strnstr(haystack, needle, -100));
+    char    haystack[] = "abc";
+    char    needle[] = "abcdef";
+	printf("my: %s\n", ft_strnstr(haystack, needle, 5));
+	printf("original: %s\n", strnstr(haystack, needle, 5));
 } */

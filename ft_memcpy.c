@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 21:38:59 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/26 19:02:13 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/01 09:00:47 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*src1;
 	size_t	i;
 
+	if (!src && (!dst))
+		return (dst);
 	i = 0;
 	dest1 = (char *)dst;
 	src1 = (char *)src;
@@ -32,7 +34,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 /* #include<stdio.h>
 #include <string.h>
 
-int main() 
+int main()
 {
 	char str[] = "Hello_Hive!";
 	char str1[] = "Hello_Hive!";
