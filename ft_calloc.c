@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 11:29:34 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 14:15:42 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/02 16:43:17 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,6 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t	total_size;
 	void	*value;
 
-	if (count && size && count > (UINT_MAX / size))
-		return (NULL);
 	total_size = count * size;
 	value = malloc(total_size);
 	if (!value)
