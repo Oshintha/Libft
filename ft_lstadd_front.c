@@ -16,8 +16,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-	new->next = *lst;
-	*lst = new;
+	new->next = *lst; // the function proceeds to add the new node to the front of the list.
+	*lst = new; // the next pointer of the new node (new->next) to point to the current head of the list (*lst)
 }
 /* 
 #include <stdio.h>
