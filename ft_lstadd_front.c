@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:30:23 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 12:59:23 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/06 11:58:55 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!lst || !new)
 		return ;
-	new->next = *lst; // the function proceeds to add the new node to the front of the list.
-	*lst = new; // the next pointer of the new node (new->next) to point to the current head of the list (*lst)
+	new->next = *lst;
+	*lst = new;
 }
-/* 
+// the function proceeds to add the new node to the front of the list.
+/*the next pointer of the new node (new->next)
+to point to the current head of the list (*lst)*/
+/*
 #include <stdio.h>
 
 int main()

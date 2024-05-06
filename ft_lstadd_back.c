@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 15:07:33 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/29 15:07:33 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/06 11:57:48 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,24 +20,27 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		return ;
 	if (!(*lst))
 	{
-		*lst = new; /* if *lst is NULL. it means the list
-		 is currently empty, and *lst is updated to point to the new node new.
-		 This effectively makes the new node the only node in the lis*/
+		*lst = new;
 		return ;
 	}
 	temp = *lst;
 	while (temp->next)
+		temp = temp->next;
+	temp->next = new;
+}
+/* if *lst is NULL. it means the list
+	is currently empty, and *lst is updated to point to the new node new.
+	This effectively makes the new node the only node in the lis*/
+
 	/*the function traverses the list to find the last node.
 	It does so by iterating through the list using a temporary pointer
 	temp until it reaches the last node. Inside the loop,
 	temp is updated to point to the next node in the list until
 	it reaches the last node, where temp->next is NULL.*/
-		temp = temp->next;
-	/*indicating that temp points to the last node in the list, 
+
+	/*indicating that temp points to the last node in the list,
 	the new node new is added after this last node.*/
-	temp->next = new;
-}
-/* 
+/*
 #include <stdio.h>
 
 int main()

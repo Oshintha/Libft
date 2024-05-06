@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/29 14:15:07 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/30 13:02:57 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/06 11:59:39 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,17 @@ t_list	*ft_lstnew(void *content)
 	new = (t_list *)malloc(sizeof(t_list));
 	if (!new)
 		return (NULL);
-	/*the content pointer passed to the function is assigned to the 
-	content field of the newly created node*/
 	new->content = content;
-	/*The next pointer of the new node is set to NULL, indicating 
-	that this node is currently the last node in the list.*/
 	new->next = NULL;
 	return (new);
 }
-/* 
+	/*the content pointer passed to the function is assigned to the
+	content field of the newly created node*/
+
+	/*The next pointer of the new node is set to NULL, indicating
+	that this node is currently the last node in the list.*/
+
+/*
 #include <stdio.h>
 
 int main()
