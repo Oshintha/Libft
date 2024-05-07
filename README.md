@@ -1,8 +1,8 @@
 # libft
-*Your very own first library :smile:*
+*Your very own first library*
 
 <div align="center">
-  <img src=https://miro.medium.com/v2/resize:fit:4800/format:webp/1*8lw6KktyFOL3wSCdZSRdsw.jpeg />
+  <img src=https://miro.medium.com/v2/resize:fit:4800/format:webp/1*8lw6KktyFOL3wSCdZSRdsw.jpeg height="400" />
 </div>
 
 ### Table of Contents
@@ -11,7 +11,6 @@
 * [Bonus](#bonus)
 * [Additional Functions](#additional-functions)
 * [Installation](#installation)
-* [Summary](#summary)
 
 ## Introduction
 In this project we'll be implementing our home-made functions from libc, which will be very useful to get familiar with memory allocation, and to think of creative ways to code these functions.
