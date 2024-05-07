@@ -6,7 +6,7 @@
 /*   By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/26 12:40:56 by aoshinth          #+#    #+#             */
-/*   Updated: 2024/04/26 18:36:40 by aoshinth         ###   ########.fr       */
+/*   Updated: 2024/05/07 08:29:58 by aoshinth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*ft_itoa(int n)
 		str[0] = '-';
 	return (str);
 }
-/* 
+/*
 #include <stdio.h>
 
 int main()

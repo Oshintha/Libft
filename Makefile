@@ -6,7 +6,7 @@
 #    By: aoshinth <aoshinth@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/26 17:21:53 by aoshinth          #+#    #+#              #
-#    Updated: 2024/04/30 14:08:41 by aoshinth         ###   ########.fr        #
+#    Updated: 2024/05/06 18:02:13 by aoshinth         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ SOURCES = \
 	ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c ft_putstr_fd.c \
 	ft_putendl_fd.c ft_putnbr_fd.c
 BSOURCES = \
-	ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
+	ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c \
+	ft_lstdelone_bonus.c ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c
 OBJECTS = $(SOURCES:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)
 
@@ -31,10 +31,10 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME): $(OBJECTS)
-	$(AR) -r $@ $?
+	@ar rcs $@ $?
 
 bonus: $(OBJECTS) $(BOBJECTS)
-	$(AR) -r $(NAME) $?
+	@ar rcs $(NAME) $?
 
 %.o: %.c
 	$(CC) -c $(CFLAGS) $?
