@@ -2,7 +2,7 @@
 *Your very own first library :smile:*
 
 <div align="center">
-  <img src=https://user-images.githubusercontent.com/40824677/149224482-9a5f469c-4748-4dcb-8321-8eafd9a44715.png />
+  <img src=https://miro.medium.com/v2/resize:fit:4800/format:webp/1*8lw6KktyFOL3wSCdZSRdsw.jpeg />
 </div>
 
 ### Table of Contents
@@ -83,7 +83,7 @@ Bonus functions to implement
 
 ## Additional Functions
 
-Besides ``mandatory`` and ``bonus`` functions, I also have a set of functions inside the ``srca/`` folder. These functions are not part of the ``libft`` subject but they will be useful in future projects. You can check their description in the [libft.h file](https://gitlab.com/madebypixel02/libft/-/blob/main/inc/libft.h)
+Besides ``mandatory`` and ``bonus`` functions, I also have a set of functions inside the ``srca/`` folder. These functions are not part of the ``libft`` subject but they will be useful in future projects. You can check their description in the [libft.h file](https://github.com/Oshintha/Libft/blob/main/libft.h)
 
 ## Installation
 To test this library out, it's recommended that you have the following packages installed
