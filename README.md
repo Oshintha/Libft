@@ -1,4 +1,4 @@
-# libft
+# Libft
 *Your very own first library*
 
 <div align="center">
