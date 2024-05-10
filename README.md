@@ -80,10 +80,6 @@ Bonus functions to implement
 | ``ft_lstget_at`` | ``[EXTRA]`` Retrieves linked list node at idex ``i``, or ``NULL``|
 
 
-## Additional Functions
-
-Besides ``mandatory`` and ``bonus`` functions. You can check their description in the [[libft.h file](https://github.com/Oshintha/Libft/blob/main/libft.h)]
-
 ## Installation
 To test this library out, it's recommended that you have the following packages installed
 ```
